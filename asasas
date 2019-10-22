@@ -89,6 +89,8 @@ a=)<input type="text" value="" id="var_in">
 <div id="inf6"></div><div id="inf1"></div>
 <div id="inf7"></div>
 <div id="inf8"></div>
+<div id="inf9"></div>
+<div id="inf10"></div>
 
 </body>
 </html>
