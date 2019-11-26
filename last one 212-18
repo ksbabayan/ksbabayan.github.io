@@ -1,0 +1,171 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>Стили</title>
+  <style>
+    @font-face {
+      font-family: "Fairy";
+      src: url(https://ksbabayan.github.io/18339.ttf);
+    }
+    
+    body {
+      display: inline-block;
+      flex-wrap: wrap;
+      align-content: space-between;
+      overflow: hidden;
+      background:radial-gradient(#e66465, #9198e5);
+      mix-blend-mode: multiply;
+    }
+    
+    .gradient {
+      text-align: left;
+      font-size: 32px;
+      font-family: Arial;
+      letter-spacing: 5px;
+    }
+    
+    .spotlight {
+      background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: rainbow_animation 6s ease-in-out infinite;
+      background-size: 400% 100%;
+    }
+    
+    @keyframes rainbow_animation {
+      0%, 100% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 100% 0;
+      }
+    }
+    
+    a.button8 {
+      display: inline-block;
+      padding: 0.2em 1.45em;
+      margin: 0.1em;
+      border: 0.15em solid #CCCCCC;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Fairy';
+      font-weight: 400;
+      color: #000000;
+      background-color: #CCCCCC;
+      text-align: center;
+      position: relative;
+    }
+    
+    a.button8:hover {
+      border-color: #7a7a7a;
+      position: relative;
+    }
+    
+    a.button8:active {
+      background-color: #999999;
+      position: relative;
+    }
+    
+    @media all and (max-width:30em) {
+      a.button8 {
+        display: block;
+        margin: 0.2em auto;
+      }
+      .layer1 {
+        position: fixed;
+      }
+    }
+  </style>
+  <script>
+    function er() {
+      var ab = Number(document.getElementById("var_in").value);
+document.getElementById("inf1").innerHTML ="";
+      document.getElementById("inf1").innerHTML = "десятков " + ((ab - ab % 10) - ab % 10)/10 + "<br>единиц " + ab % 10 + "<br>их сумма=" + (ab % 10 + (ab - ab % 10) / 10) + "<br>их произведение=" + (ab % 10 * (ab - ab % 10) / 10);
+    }
+
+    function er1() {
+      var ab = Number(document.getElementById("var_in").value);
+document.getElementById("inf1").innerHTML ="";
+      document.getElementById("inf1").innerHTML = 
+      "десятков " + ((((ab % 100)-(ab % 10)))/10)+ 
+      "<br>единиц " + ab % 10 +
+      "<br>их сумма="
+      + ((((ab - (ab % 10)-((ab % 100) - (ab % 10)))/100)+(ab % 10))+((((ab % 100) - (ab % 10)) / 10))) +
+      "<br>их произведение=" + ((((ab - (ab % 10)-((ab % 100) - (ab % 10)))/100)*(ab % 10))*((((ab % 100) - (ab % 10)) / 10))) ;
+    }
+
+    function er3() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent = 
+      (ab % 10 )*100+((((ab % 100)-(ab % 10)))/10)*10+((ab-((ab % 100)-(ab % 10))-(ab % 10))/100) ;
+    }
+    
+     function er4() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent = 
+      (ab % 10 )*10+((((ab % 100)-(ab % 10)))/10)*100+((ab-((ab % 100)-(ab % 10))-(ab % 10))/100) ;
+    }
+    
+     function er5() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent = 
+      (ab % 10 )*100+((((ab % 100)-(ab % 10)))/10)+((ab-((ab % 100)-(ab % 10))-(ab % 10))/100)*10 ;
+    }
+    
+     function er6() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent = 
+      (ab % 10 )+((((ab % 100)-(ab % 10)))/10)*100+((ab-((ab % 100)-(ab % 10))-(ab % 10))/100)*10 ;
+    }
+    
+    function er7() {
+      var ab = document.getElementById("var_in").value;
+document.getElementById("inf1").textContent = "";
+      document.getElementById("inf1").textContent = 
+      (ab % 10 )*100+((((ab % 100)-(ab % 10)))/10)*10+((ab-((ab % 100)-(ab % 10))-(ab % 10))/100) ;
+    }
+    
+    function er8() { 
+      document.getElementById("inf1").innerHTML = " "
+      var abc = document.getElementById("var_in").value;
+      var a,b,c;
+      c= abc%10
+      b= ((abc-c)/10)%10
+      a= (abc-(abc%100))/100
+      document.getElementById("inf1").innerHTML = a*100+c*10+ "<br>" +
+      (a*100+b*10+c) +"<br>"+
+      (b*100+a*10+c) +"<br>"+
+      (b*100+c*10+a) +"<br>"+
+      (c*100+b*10+a) +"<br>"+
+      (c*100+a*10+b);
+}
+  </script>
+</head>
+
+<body>
+  <a class="button8" onclick="er()">2.10</a>
+  <a class="button8" onclick="er1()">2.12</a>
+  <a class="button8" onclick="er3()">2.13</a>
+  <a class="button8" onclick="er4()">2.14</a>
+  <a class="button8" onclick="er5()">2.15</a>
+  <a class="button8" onclick="er6()">2.16</a>
+  <a class="button8" onclick="er7()">2.17</a>
+  <a class="button8" onclick="er8()">2.18</a>
+  
+  <div class="layer1">
+    <input type="text" value="57" id="var_in">
+    <br>
+  </div>
+  <div class="gradient">
+    <div class="spotlight" data-text="" id="inf1"></div>
+  </div>
+
+</body>
+
+</html>
