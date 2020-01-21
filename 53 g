@@ -1,0 +1,51 @@
+  
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+<style> p {background-color: #fff;
+        margin: 20px auto;
+        font-family: Arial;
+        font-size: 2em; 
+        text-transform: uppercase;
+        color: rgba(0,168,255,0.5);
+        text-shadow: 8px 8px 0 rgba(255,0,180,0.5);}
+</style>
+<script>
+function er(){
+
+
+document.getElementById("inf1").innerHTML ="" ;
+
+var a =Number(document.getElementById("vara_in").value);
+var b =Number(document.getElementById("varb_in").value);
+
+while (a <= b) {
+  document.getElementById("inf2").innerHTML =document.getElementById("inf2").innerHTML+a+" " ;
+  a++;
+}
+
+
+
+}
+</script>
+</head>
+<body>
+<button onclick="er()">5.3 g</button>
+<br>
+<br>
+<input type="a" value="15" id="vara_in">
+<input type="b" value="16" id="varb_in">
+<br>
+<br>
+
+<div id="inf1"></div>
+<br>
+<br>
+<br>
+<div id="inf2"></div>
+<br>
+
+</body>
+</html>
