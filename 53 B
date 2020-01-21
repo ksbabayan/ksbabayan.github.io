@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+
+<html>
+
+  <head>
+
+   <script>
+
+     function er(){
+
+       var i=20
+
+       while (i<=35) {
+
+       document.getElementById("inf1").innerHTML = document.getElementById("inf1").innerHTML +i+ "<br>"
+
+       i++;
+
+       }
+i=0
+       var b = Number(document.getElementById("varb_in").value)
+
+       while (i<=b) {
+
+       document.getElementById("inf2").innerHTML = document.getElementById("inf2").innerHTML +i*i+ "<br>"
+
+       i++;
+
+       }
+
+       var b = Number(document.getElemntById("vara_in").value)
+
+       while (i<=50) {
+
+       document.getElementById("inf3").innerHTML = document.getElementById("inf3").innerHTML +i*i*i+ "<br>"
+
+       i++;
+
+       }
+
+     }
+
+   </script>
+
+  </head>
+
+  <body>
+
+    <button onclick="er()">5.3</button>
+
+    <br>
+
+    <br>
+
+    b=<input type="text" value="16" id="varb_in">
+
+    <br>
+
+    a=<input type="text" value="10" id="vara_in">
+
+    <br>
+
+    
+
+
+
+    <div id="inf1"></div>
+
+    ______________________________________
+
+    <div id="inf2"></div>
+
+    ______________________________________
+
+    <div id="inf3"></div>
+
+  </body>
+
+</html>
